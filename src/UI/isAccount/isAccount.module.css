@@ -1,0 +1,13 @@
+.isAccount {
+	font-family: var(--OktaNeueNormal-font);
+	font-size: var(--isAccount-fontSize);
+	color: var(--main-color);
+}
+
+.actionText {
+	color: var(--action-blue-color);
+}
+
+.ml {
+	margin-left: .5rem;
+}

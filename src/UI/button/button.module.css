@@ -1,0 +1,15 @@
+.button {
+	background: var(--accent-background-color);
+	border: 1px solid var(--accent-background-color);
+	padding: 0.625rem 0 0.625rem 0.625rem;
+}
+
+.buttonChildren {
+	color: var(--white-color);
+	font-family: var(--OktaNeueNormal-font);
+	font-size: var(--action-fontSize);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

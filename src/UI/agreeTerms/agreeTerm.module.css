@@ -1,0 +1,10 @@
+.agreeTermText {
+	font-family: var(--OktaNeueNormal-font);
+	font-size: var(--agreeTerms-fontSize);
+	color: var(--main-color);
+}
+
+.textDecor {
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
+}
