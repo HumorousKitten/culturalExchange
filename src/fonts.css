@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'OktaNeueBlack';
+	src: 
+		url('./assets/fonts/OktaNeue/OktaNeue-Black.woff2') format('woff2'),
+		url('./assets/fonts/OktaNeue/OktaNeue-Black.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'OktaNeueNormal';
+	src: 
+		url('./assets/fonts/OktaNeue/OktaNeue-Normal.woff2') format('woff2'),
+		url('./assets/fonts/OktaNeue/OktaNeue-Normal.woff') format('woff');
+}
