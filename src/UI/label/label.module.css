@@ -1,5 +1,11 @@
 .labelTitle {
 	font-family: var(--OktaNeueNormal-font);
 	font-size: var(--labelText-fontSize);
-	color: var(--main-color)
+	color: var(--main-color);
+	margin-bottom: 0.125rem;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
 }

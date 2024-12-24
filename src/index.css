@@ -23,14 +23,16 @@
 	--input-border-radius: 0.625rem;
 	--input-border-mainColor: #000000;
 
+	--actionButton-border-raduis: 0.625rem;
+
 	--loginWithYandex-fontSize: 0.5rem;
 	--loginWithVK-fontSize: 0.5625rem;
 	--title-fontSize: 2rem;
 	--underTitle-fontSize: 0.875rem;
 	--labelText-fontSize: 0.875rem;
-	--placeholder-fontSize: 0.625rem;
+	--placeholder-fontSize: 0.8125rem;
 	--action-fontSize: 0.8125rem;
-	--agreeTerms-fontSize: 0.5625rem; 
+	--agreeTerms-fontSize: 0.75rem; 
 	--isAccount-fontSize: 0.875rem;
 	--downloadPhoto-fontSize: 0.625rem;
 }

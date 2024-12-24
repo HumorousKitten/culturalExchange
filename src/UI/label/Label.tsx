@@ -9,9 +9,10 @@ interface ILabelProps {
 
 export const Label: FC<ILabelProps> = ({children, htmlFor, className}) => {
 	return (
-		<label htmlFor={htmlFor} className={className ? className : ''}>
-			<span className={st.labelTitle}>{children[0]}</span>
-			{children[1]}
+		<label htmlFor={htmlFor} className={className ? st[className] : ''}>
+			{htmlFor === 'agreeTerm' ? null : <p className={st.labelTitle}>{children[0]}</p>}
+			{htmlFor === 'agreeTerm' ? children[0] : children[1]}
+			{htmlFor === 'agreeTerm' ? children[1] : null}
 		</label>
 	);
 }

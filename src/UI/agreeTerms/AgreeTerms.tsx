@@ -4,7 +4,7 @@ import st from './agreeTerm.module.css'
 
 export const AgreeTerms = () => {
 	return (
-		<Label htmlFor='agreeTerm'>
+		<Label htmlFor='agreeTerm' className={'flex'}>
 			<Input type='checkbox' required={true} htmlFor='agreeTerm' />
 			<p className={st.agreeTermText}>
 				Согласен с <span className={st.textDecor}>условиями</span>

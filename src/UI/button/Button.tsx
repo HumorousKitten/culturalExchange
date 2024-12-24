@@ -1,9 +1,9 @@
-import { FC, ReactElement } from 'react'
+import { FC, ReactNode } from 'react'
 import st from './button.module.css'
 
 interface IButtonProps {
-	children: ReactElement
-	onClick: (e: any) => void
+	children: ReactNode
+	onClick?: (e: any) => void
 }
 
 export const Button: FC<IButtonProps> = ({ children, onClick }) => {

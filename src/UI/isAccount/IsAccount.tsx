@@ -5,7 +5,7 @@ import st from './isAccount.module.css'
 interface IsAccountPropsInterface {
 	isAccountText: string
 	actionText: string
-	onClick: (e: any) => void
+	onClick?: (e: any) => void
 }
 
 export const IsAccount: FC<IsAccountPropsInterface> = ({ isAccountText, actionText, onClick }) => {

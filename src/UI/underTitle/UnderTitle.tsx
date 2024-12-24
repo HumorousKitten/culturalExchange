@@ -6,5 +6,5 @@ interface IUnderTitle {
 }
 
 export const UnderTitle: FC<IUnderTitle> = ({ underTitle }) => {
-	return <p className={`${st.underTitle} ${st.marginTop}`}>{underTitle}</p>
+	return <p className={`${st.underTitle}`}>{underTitle}</p>
 }
