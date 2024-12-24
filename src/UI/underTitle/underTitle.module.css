@@ -1,0 +1,6 @@
+.underTitle {
+	font-family: var(--OktaNeueNormal-font);
+	font-size: var(--underTitle-fontSize);
+	color: var(--main-color);
+}
+
