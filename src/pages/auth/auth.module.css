@@ -1,0 +1,26 @@
+.wrapper {
+	width: 100%;
+}
+
+.form {
+	margin: 12.5rem auto;
+}
+
+.formInputs {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+	margin-top: 2.013rem;
+}
+
+.formInputs > button {
+	margin-top: 0.5425rem;
+}
+
+
+
+@media screen and (min-width: 48rem){
+	.wrapper {
+		width: calc(100% - (100% - 25.25rem));
+	}
+}

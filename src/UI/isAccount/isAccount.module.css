@@ -1,0 +1,15 @@
+.isAccount {
+	font-family: var(--OktaNeueNormal-font);
+	font-size: var(--isAccount-fontSize);
+	color: var(--main-color);
+	text-align: center;
+	margin-top: 0.625rem;
+}
+
+.actionText {
+	color: var(--action-blue-color);
+}
+
+.ml {
+	margin-left: .5rem;
+}

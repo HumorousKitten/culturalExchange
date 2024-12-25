@@ -1,0 +1,10 @@
+.title {
+	font-family: var(--OktaNeueBlack-font);
+	font-size: var(--title-fontSize);
+	color: var(--main-color);
+
+}
+
+.lineHeight {
+	line-height: 122%;
+}

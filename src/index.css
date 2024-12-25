@@ -1,0 +1,38 @@
+@import url('./reset.css');
+@import url('./fonts.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+:root {
+	--OktaNeueBlack-font: 'OktaNeueBlack', sans-serif;
+	--OktaNeueNormal-font: 'OktaNeueNormal', sans-serif;
+	--interRegular-font: 'Inter', sans-serif;
+	--PoppinsMedium-font: 'Poppins', sans-serif;
+
+	--main-background: #ffffff;
+	--white-color: #ffffff;
+	--accent-background-color: #3a5b22;
+	--downloadPhoto-background-color: #000000;
+
+	--main-color: #000000;
+	--placeholder-color:  #d9d9d9;
+	--action-blue-color: #0f3dde;
+
+	--input-border-placeholder-color: #d9d9d9;
+	--input-border-radius: 0.625rem;
+	--input-border-mainColor: #000000;
+
+	--actionButton-border-raduis: 0.625rem;
+
+	--loginWithYandex-fontSize: 0.5rem;
+	--loginWithVK-fontSize: 0.5625rem;
+	--title-fontSize: 2rem;
+	--underTitle-fontSize: 0.875rem;
+	--labelText-fontSize: 0.875rem;
+	--placeholder-fontSize: 0.8125rem;
+	--action-fontSize: 0.8125rem;
+	--agreeTerms-fontSize: 0.75rem; 
+	--isAccount-fontSize: 0.875rem;
+	--downloadPhoto-fontSize: 0.625rem;
+}
