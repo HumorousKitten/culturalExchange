@@ -14,7 +14,12 @@ import React from 'react'
 
 
 const Registration = () => {
-	const {changeEmail, changeLogin, changePassword, dataResult} = useAuthStore()
+	const {changeEmail, changeLogin, changePassword, dataResult, changeDataResult} = useAuthStore()
+
+	React.useEffect(() => {
+		if(!dataResult)
+			changeDataResult(true)
+	}, [])
 
 	function handleLoginChange(e: React.ChangeEvent<HTMLInputElement>, errorState: React.Dispatch<React.SetStateAction<string>>) {
 		const message = validateLogin(e.target.value)

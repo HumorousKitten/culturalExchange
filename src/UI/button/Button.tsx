@@ -21,8 +21,8 @@ export const Button: FC<IButtonProps> = ({
 	async function handleButtonClick() {
 		console.log(userEmail, userLogin, userPassword)
 		if (error === 'noneError' && methodApi === 'registration') {
-			const data = await registration(userEmail, userLogin, userPassword)
-			console.log(data)
+			const data = await registration(userLogin, userPassword, userEmail)
+
 			if (!data) {
 				changeDataResult(false)
 				return
@@ -32,7 +32,7 @@ export const Button: FC<IButtonProps> = ({
 
 		if (error === 'noneError' && methodApi === 'auth') {
 			const data = await auth(userEmail, userPassword)
-			console.log(data)
+
 			if (!data) {
 				changeDataResult(false)
 				return
