@@ -2,6 +2,7 @@ import { FC, ReactNode } from 'react'
 import { auth } from '../../service/api/auth.service'
 import { registration } from '../../service/api/registration.service'
 import { useAuthStore } from '../../store/useAuthStore'
+import { useNavigate } from 'react-router-dom'
 import st from './button.module.css'
 
 interface IButtonProps {
@@ -18,6 +19,8 @@ export const Button: FC<IButtonProps> = ({
 	const { error, userEmail, userLogin, userPassword, changeDataResult, dataResult} =
 		useAuthStore()
 
+	const navigate = useNavigate()
+
 	async function handleButtonClick() {
 		console.log(userEmail, userLogin, userPassword)
 		if (error === 'noneError' && methodApi === 'registration') {
@@ -28,6 +31,7 @@ export const Button: FC<IButtonProps> = ({
 				return
 			}
 			changeDataResult(true)
+			navigate('/profile')
 		}
 
 		if (error === 'noneError' && methodApi === 'auth') {
@@ -38,6 +42,7 @@ export const Button: FC<IButtonProps> = ({
 				return
 			}
 			changeDataResult(true)
+			navigate('/profile')
 		}
 	}
 

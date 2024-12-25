@@ -7,7 +7,7 @@ interface IMainTitle {
 
 export const MainTitle: FC<IMainTitle> = ({title}) => {
 	return (
-		<h1 className={st.title}>{title}</h1>
+		<h1 className={`${st.title} ${title === 'Теперь' ? st.lineHeight : ''}`}>{title}</h1>
 	);
 }
  

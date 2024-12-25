@@ -7,10 +7,10 @@ interface inputPropsInterface {
 	required?: boolean
 	className?: string
 	disabled?: boolean
-	onChange: (
+	onChange?: (
 		e: React.ChangeEvent<HTMLInputElement>,
-		errorState: React.Dispatch<React.SetStateAction<string>>
-	) => void | ((e: React.ChangeEvent<HTMLInputElement>) => void);
+		errorState?: React.Dispatch<React.SetStateAction<string>>
+	) => void 
 	htmlFor?: string
 	errorState?: React.Dispatch<React.SetStateAction<string>>
 	setIsBlur?: React.Dispatch<React.SetStateAction<boolean>>
@@ -33,7 +33,7 @@ export const Input: FC<inputPropsInterface> = ({
 			} ${props.className ? props.className : ''}`}
 			id={props.htmlFor}
 			onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
-				if(props.errorState)
+				if(props.errorState, props.onChange)
 					props.onChange(e, props.errorState)
 			}}
 			onBlur={() => {
