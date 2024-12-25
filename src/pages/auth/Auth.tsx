@@ -67,7 +67,7 @@ const Auth = () => {
 					<Button methodApi = {'auth'}>Войти</Button>
 					{!dataResult ? <p>Аккаунт не найден</p> : null}
 				</div>
-
+				
 				<IsAccount isAccountText={'Еще нет аккаунта?'} actionText={'Создайте'} />
 			</form>
 		</main>

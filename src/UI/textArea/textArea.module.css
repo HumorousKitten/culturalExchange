@@ -1,0 +1,12 @@
+.interestsArea {
+	border: 1px solid var(--input-border-placeholder-color);
+	border-radius: 0.6875rem;
+	width: 100%;
+	min-height: 5.75rem;
+	resize: none;
+	padding: 0.5625rem 0px 0px 0.6875rem;
+}
+
+.interestsArea::placeholder {
+	color: var(--placeholder-color);
+}

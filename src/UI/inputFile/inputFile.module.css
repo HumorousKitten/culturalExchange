@@ -1,0 +1,30 @@
+.customInputFileBlock {
+	position: relative;
+}
+
+
+.inputFile {
+	opacity: 0;
+	border: 1px solid red;
+	width: 100%;
+	border-radius: var(--input-border-radius);
+	padding: 0.625rem 0 0.625rem 0.625rem;
+	position: absolute;
+	top: 0px;
+}
+
+.customText {
+	position: absolute;
+	color: #ffffff;
+	left: 0.6875rem;
+	top: 0.8125rem;
+	font-family: var(--PoppinsMedium-font);
+	font-size: var(--downloadPhoto-fontSize);
+}
+
+.backgroundForInput {
+	background-color: var(--downloadPhoto-background-color);
+	padding: 0.625rem 0 0.625rem 0.625rem;
+	border-radius: var(--input-border-radius);
+	min-height: 2.5rem;
+}
