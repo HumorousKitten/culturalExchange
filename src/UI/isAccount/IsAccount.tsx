@@ -1,18 +1,17 @@
 import { FC } from 'react'
 import st from './isAccount.module.css'
-
+import { Link } from 'react-router-dom'
 
 interface IsAccountPropsInterface {
 	isAccountText: string
 	actionText: string
-	onClick?: (e: any) => void
 }
 
-export const IsAccount: FC<IsAccountPropsInterface> = ({ isAccountText, actionText, onClick }) => {
+export const IsAccount: FC<IsAccountPropsInterface> = ({ isAccountText, actionText}) => {
 	return (
 		<p className={st.isAccount}>
 			{isAccountText}
-			<span onClick={onClick} className={`${st.actionText} ${st.ml}`}>{actionText}</span>
+			<Link className={`${st.actionText} ${st.ml}`} to={actionText === 'Войти' ?'/auth' : '/registration'}>{actionText}</Link>
 		</p>
 	)
 }
